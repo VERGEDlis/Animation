@@ -74,3 +74,10 @@ $words.each( function() {
     ticker = new Ticker( $this ).reset();
   $this.data( 'ticker', ticker  );
 });
+
+function simulateLoading() {
+  setTimeout(() => {
+    document.body.innerHTML = '<h1>Контент загружен!</h1>';
+  }, 5000); // Загрузка завершится через 5 секунд
+}
+simulateLoading();
